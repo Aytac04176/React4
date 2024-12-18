@@ -10,11 +10,8 @@ const ListPage = () => {
 
   const { id } = useParams();
 
-  useEffect(async () => {
-    const response = await axios.get(
-      `https://acb-api.algoritmika.org/api/movies/list/${id}`
-    );
-    setState(response.data.movies);
+  useEffect( () => {
+axios.get(`https://acb-api.algoritmika.org/api/movies/list/${id}`).then(res=>setState(res.data.movies))
   }, [id]);
   return (
     <div className="list-page">

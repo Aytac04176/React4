@@ -6,7 +6,7 @@ const Header =()=>{
         return (
             <header className="header">
                 <h1 className="header__title">
-                    MustSee
+                  Filmlər
                 </h1>
             </header>
         );

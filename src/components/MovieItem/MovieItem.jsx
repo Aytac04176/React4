@@ -19,7 +19,7 @@ const MovieItem = ()=> {
                             <img className="movie-item__poster" src={item.Poster} alt={item.Title} />
                             <div className="movie-item__info">
                                 <h3 className="movie-item__title">{item.Title}&nbsp;({item.Year})</h3>
-                                <button type="button" className="movie-item__add-button"onClick={()=>dispatch(add({title:item.Title,id:item.imdbID,poster:item.Poster,year:item.Year}))}>Добавить в список</button>
+                                <button type="button" className="movie-item__add-button"onClick={()=>dispatch(add({title:item.Title,id:item.imdbID,poster:item.Poster,year:item.Year}))}>Siyahıya əlavə edin</button>
                             </div>
                         </article>
                         )
